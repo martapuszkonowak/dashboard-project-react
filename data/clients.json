@@ -1,0 +1,22 @@
+{
+  "clients": [
+    {
+      "first_name": "Nana",
+      "last_name": "Morito",
+      "address": "1 Clayton Road, West Molesey KT8 1QR",
+      "email": "nanamorito@gmail.com"
+    },
+    {
+      "first_name": "Glenn",
+      "last_name": "Smith",
+      "address": "13 Walton Road, Hersham KT12 3PZ",
+      "email": "emailme@gmail.com"
+    },
+    {
+      "first_name": "Carlos",
+      "last_name": "DosSantos",
+      "address": "5 Green Gardens, East Molesey KT8 5TH",
+      "email": "mail@carlosdossantos.co.uk"
+    }
+  ]
+}
