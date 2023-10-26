@@ -1,4 +1,4 @@
-import "./App.css";
+import Home from "./Home";
 
 function App() {
   return (
@@ -6,6 +6,7 @@ function App() {
       <header className="App-header">
         <h1>Dashboard</h1>
       </header>
+      <Home />
     </div>
   );
 }
