@@ -2,6 +2,7 @@ import Home from "./Home";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Create from "./Create";
 import NotFound from "./NotFound";
+import Update from "./Update";
 
 function App() {
   return (
@@ -18,6 +19,9 @@ function App() {
               </Route>
               <Route exact path="/create">
                 <Create />
+              </Route>
+              <Route path="/update/:id">
+                <Update />
               </Route>
               <Route path="*">
                 <NotFound />

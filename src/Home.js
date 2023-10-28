@@ -1,5 +1,6 @@
 import axios from "axios";
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 function Home() {
   // todo: load clients via API axios
@@ -44,8 +45,8 @@ function Home() {
               <td>{client.address}</td>
               <td>{client.email}</td>
               <td>
-                <button>X</button>
-                <button>Edit</button>
+                <Link to={"/delete/" + client.id}>Delete</Link>
+                <Link to={"/update/" + client.id}>Update</Link>
               </td>
             </tr>
           ))}
@@ -53,7 +54,7 @@ function Home() {
       </table>
 
       <div className="add-client">
-        <a href="/create">Add new client</a>
+        <Link to="/create">Add new client</Link>
       </div>
     </div>
   );
