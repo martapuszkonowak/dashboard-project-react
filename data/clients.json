@@ -20,6 +20,13 @@
       "address": "5 Green Gardens, East Molesey KT8 5TH",
       "email": "mail@carlosdossantos.co.uk",
       "id": 3
+    },
+    {
+      "first_name": "Oliver",
+      "last_name": "Smith",
+      "address": "67 Holly Avenue, ST Albans",
+      "email": "mail@emailme.co.uk",
+      "id": 4
     }
   ]
 }
