@@ -25,20 +25,21 @@ function Home() {
   return (
     <div className="Home">
       <h2>Clients list</h2>
-      <table>
+      <table class="table table-hover">
         <thead>
           <tr>
-            <th>ID</th>
-            <th>First name</th>
-            <th>Last name</th>
-            <th>Address</th>
-            <th>Email</th>
-            <th>Actions</th>
+            <th scope="col">ID</th>
+            <th scope="col">First name</th>
+            <th scope="col">Last name</th>
+            <th scope="col">Address</th>
+            <th scope="col">Email</th>
+            <th scope="col">Actions</th>
           </tr>
         </thead>
         <tbody>
           {clients.map((client) => (
             <tr key={client.id}>
+              <th scope="row">1</th>
               <td>{client.id}</td>
               <td>{client.first_name}</td>
               <td>{client.last_name}</td>
