@@ -1,8 +1,11 @@
 body {
   margin: 20px;
   padding: 20px;
-  background-color: #d3d92b;
-  border: 4px solid #6c8c3b;
-
+  background: rgb(238, 174, 202);
+  background: radial-gradient(
+    circle,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(211, 230, 207, 1) 100%
+  );
   border-radius: 20px;
 }
