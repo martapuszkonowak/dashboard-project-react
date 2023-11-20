@@ -1,0 +1,29 @@
+.App {
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 20px;
+  font-family: "Abril Fatface", serif;
+  max-width: 400px;
+}
+
+h1 {
+  color: #b284bf;
+}
+
+.Form label {
+  text-align: left;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 10px;
+}
+
+.Form button {
+  margin-top: 20px;
+  color: black;
+  color: #b284bf;
+  border: 1px solid #b284bf;
+  padding: 10px 20px;
+}
+
+.Form button:hover {
+  background-color: #b284bf;
+}

@@ -85,7 +85,9 @@ const Create = () => {
         </label>
         <br />
 
-        <button>Submit</button>
+        <button type="button" class="btn btn-outline-secondary">
+          Submit
+        </button>
       </form>
     </div>
   );
