@@ -8,19 +8,37 @@
 h1 {
   color: #b284bf;
 }
+.container {
+  margin: 0 auto;
+  border: solid 1px black;
+  max-width: 400px;
+  background-color: black;
+  padding: 20px;
+  border-radius: 10px;
+}
 
 .Home,
 .Form {
   font-family: "Poppins", sans-serif;
 }
-.Home .table .table-hover {
-  max-width: 100%;
-  color: red;
+
+.Home h2 {
+  color: white;
+}
+.Home .container {
+  max-width: 1200px;
+}
+.Home .container .add-client a {
+  color: #b284bf;
 }
 
+.Home .container .add-client a:hover {
+  color: white;
+  text-decoration: none;
+}
 .Form label {
   text-align: left;
-
+  color: white;
   margin-bottom: 10px;
 }
 

@@ -24,38 +24,40 @@ function Home() {
 
   return (
     <div className="Home">
-      <h2>Clients list</h2>
-      <table class="table table-hover">
-        <thead>
-          <tr>
-            <th scope="col">ID</th>
-            <th scope="col">First name</th>
-            <th scope="col">Last name</th>
-            <th scope="col">Address</th>
-            <th scope="col">Email</th>
-            <th scope="col">Actions</th>
-          </tr>
-        </thead>
-        <tbody>
-          {clients.map((client) => (
-            <tr key={client.id}>
-              <th scope="row">1</th>
-              <td>{client.id}</td>
-              <td>{client.first_name}</td>
-              <td>{client.last_name}</td>
-              <td>{client.address}</td>
-              <td>{client.email}</td>
-              <td>
-                <Link to={"/delete/" + client.id}>Delete</Link>
-                <Link to={"/update/" + client.id}>Update</Link>
-              </td>
+      <div className="container">
+        <h2>Clients list</h2>
+        <table class="table table-hover">
+          <thead>
+            <tr>
+              <th scope="col">ID</th>
+              <th scope="col">First name</th>
+              <th scope="col">Last name</th>
+              <th scope="col">Address</th>
+              <th scope="col">Email</th>
+              <th scope="col">Actions</th>
             </tr>
-          ))}
-        </tbody>
-      </table>
+          </thead>
+          <tbody>
+            {clients.map((client) => (
+              <tr key={client.id}>
+                <th scope="row">1</th>
+                <td>{client.id}</td>
+                <td>{client.first_name}</td>
+                <td>{client.last_name}</td>
+                <td>{client.address}</td>
+                <td>{client.email}</td>
+                <td>
+                  <Link to={"/delete/" + client.id}>Delete</Link>
+                  <Link to={"/update/" + client.id}>Update</Link>
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
 
-      <div className="add-client">
-        <Link to="/create">Add new client</Link>
+        <div className="add-client">
+          <Link to="/create">Add new client</Link>
+        </div>
       </div>
     </div>
   );

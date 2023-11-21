@@ -8,9 +8,11 @@ import "./App.css";
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <h1>Dashboard</h1>
-      </header>
+      <div className="container">
+        <header className="App-header">
+          <h1>Dashboard</h1>
+        </header>
+      </div>
       <Router>
         <div className="App">
           <div className="content">

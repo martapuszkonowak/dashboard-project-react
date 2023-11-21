@@ -27,68 +27,70 @@ const Create = () => {
   };
 
   return (
-    <div className="Form">
-      <form onSubmit={handleSubmit}>
-        <label>
-          First name
+    <div className="container">
+      <div className="Form">
+        <form onSubmit={handleSubmit}>
+          <label>
+            First name
+            <br />
+            <input
+              type="text"
+              name="first_name"
+              placeholder="First name"
+              required
+              value={firstName}
+              onChange={(e) => setFirstName(e.target.value)}
+            />
+          </label>
           <br />
-          <input
-            type="text"
-            name="first_name"
-            placeholder="First name"
-            required
-            value={firstName}
-            onChange={(e) => setFirstName(e.target.value)}
-          />
-        </label>
-        <br />
 
-        <label>
-          Last name
+          <label>
+            Last name
+            <br />
+            <input
+              type="text"
+              name="last_name"
+              placeholder="Last name"
+              required
+              value={lastName}
+              onChange={(e) => setLastName(e.target.value)}
+            />
+          </label>
           <br />
-          <input
-            type="text"
-            name="last_name"
-            placeholder="Last name"
-            required
-            value={lastName}
-            onChange={(e) => setLastName(e.target.value)}
-          />
-        </label>
-        <br />
 
-        <label>
-          Address
+          <label>
+            Address
+            <br />
+            <input
+              type="text"
+              name="address"
+              placeholder="Address"
+              required
+              value={address}
+              onChange={(e) => setAddress(e.target.value)}
+            />
+          </label>
           <br />
-          <input
-            type="text"
-            name="address"
-            placeholder="Address"
-            required
-            value={address}
-            onChange={(e) => setAddress(e.target.value)}
-          />
-        </label>
-        <br />
 
-        <label>
-          Email
+          <label>
+            Email
+            <br />
+            <input
+              type="text"
+              name="email"
+              placeholder="Email"
+              required
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+            />
+          </label>
           <br />
-          <input
-            type="text"
-            name="email"
-            placeholder="Email"
-            required
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-          />
-        </label>
-        <br />
 
-        <button type="button" class="btn btn-outline-secondary">
-          Submit
-        </button>
-      </form>
+          <button type="button" class="btn btn-outline-secondary">
+            Submit
+          </button>
+        </form>
+      </div>
     </div>
   );
 };
